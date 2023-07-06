@@ -1,0 +1,12 @@
+{
+  "hopperFirmwares": [
+    {
+      "version": "0.0.4",
+      "firmwarePath": "/hopper/dfu_application-0.0.4.zip",
+      "status": "production",
+      "priority": "critical"
+    }
+  ],
+  "controllerFirmwares": [
+  ]
+}
