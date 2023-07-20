@@ -21,6 +21,13 @@ The main file is the /firmwares.json file.  This contains the information for wh
  - *recommended*: Recommended firmware prompts the user to update the firmware, but it is not required.
  - *critical*: Critical firmware forces the user to update the firmware.
 
+## Firmware structure ##
+
+The firmware should be in .zip file format, prepared using [nRF Util](https://github.com/NordicSemiconductor/pc-nrfutil). 
+
+ - *manifest.json*: Must have at least one manifest file
+ 
+ - *application.bin*: Must have this file name, otherwise it get error during update process 
 
 ## Example Code ##
 
