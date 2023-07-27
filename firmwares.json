@@ -5,7 +5,19 @@
       "firmwarePath": "/hopper/dfu_application-0.0.4.zip",
       "status": "production",
       "priority": "critical"
-    }
+    },
+	{
+      "version": "0.0.7",
+      "firmwarePath": "/hopper/dfu_application-0.0.7.zip",
+      "status": "beta",
+      "priority": "optional"
+    },
+	{
+      "version": "0.0.8",
+      "firmwarePath": "/hopper/dfu_application-0.0.8.zip",
+      "status": "beta",
+      "priority": "optional"
+    },
   ],
   "controllerFirmwares": [
   ]
