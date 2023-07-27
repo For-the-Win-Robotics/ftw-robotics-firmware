@@ -17,7 +17,7 @@
       "firmwarePath": "/hopper/dfu_application-0.0.8.zip",
       "status": "beta",
       "priority": "optional"
-    },
+    }
   ],
   "controllerFirmwares": [
   ]
