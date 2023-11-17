@@ -45,7 +45,7 @@
     {
       "version": "1.0.16",
       "firmwarePath": "/hopper/dfu_application-1.0.16.zip",
-      "status": "beta",
+      "status": "production",
       "priority": "optional",
       "key": "lastUnknownKey4"
     }
