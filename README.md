@@ -40,28 +40,28 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 	          "firmwarePath": "/hopper/dfu_application-0.0.1.zip",
 	          "status": "beta",
 	          "priority": "optional",
-                  "key": "testKey1"
+	          "key": "testKey1"
 	        },
 	        {
 	          "version": "0.0.2",
 	          "firmwarePath": "/hopper/dfu_application-0.0.2.zip",
 	          "status": "beta",
 	          "priority": "recommended",
-                  "key": "testKey2"
+	          "key": "testKey2"
 	        },
 	        {
 	          "version": "0.0.3",
 	          "firmwarePath": "/hopper/dfu_application-0.0.3.zip",
 	          "status": "beta",
 	          "priority": "optional",
-                  "key": "testKey1"
+	          "key": "testKey1"
 	        },
 	        {
 	          "version": "0.0.4",
 	          "firmwarePath": "/hopper/dfu_application-0.0.4.zip",
 	          "status": "production",
 	          "priority": "critical",
-                  "key": "testKey2"
+	          "key": "testKey2"
 	        }
 	    ],
 	    "controllerFirmwares": [
@@ -70,7 +70,7 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 	          "firmwarePath": "/controller/dfu_application-0.0.1.zip",
 	          "status": "production",
 	          "priority": "critical",
-                  "key": "testKey1"
+	          "key": "testKey1"
 	        }
 	    ]
 	}
