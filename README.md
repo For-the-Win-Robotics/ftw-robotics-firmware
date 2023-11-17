@@ -67,3 +67,41 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 	        }
 	    ]
 	}
+
+
+## Testing to Production Flow ##
+
+The typical flow to introduce a new firmware is as follows:
+
+1. Update this repository with the firmware zip file & json file.
+Ensure the json file includes the firmware with `"status": "beta"` and `"priority": "optional"`
+
+       {
+           "version": "7.8.9",
+           "firmwarePath": "/hopper/dfu_application-7.8.9.zip",
+           "status": "beta",
+           "priority": "optional"
+       }
+
+2. Commit the changes to the repository.
+3. Test the latest firmware in the app.
+The app will need to be in 'developer mode' 
+Firmware updates will need to be through the 'update firmware' screens.
+3. Assuming everything worked well, change the json file to reflect `"status": "production"`
+
+       {
+           "version": "7.8.9",
+           "firmwarePath": "/hopper/dfu_application-7.8.9.zip",
+           "status": "production",
+           "priority": "recommended"
+       }
+
+4. Commit the changes to the repository.
+5. Test the app with additional users. 
+This will be available to all users, 
+but people must go to the 'Update Firmware' 
+section of the app to get the update. 
+6. Assuming everything worked well, change the json file to reflect `"priority": "recommended"`
+7. Commit the changes to the repository.
+This will now show as a recommended firmware update when people connect to the drone.
+
