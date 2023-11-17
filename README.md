@@ -21,6 +21,8 @@ The main file is the /firmwares.json file.  This contains the information for wh
  - *recommended*: Recommended firmware prompts the user to update the firmware, but it is not required.
  - *critical*: Critical firmware forces the user to update the firmware.
 
+***key***: A unique identifier ensuring firmware updates can only occur with the same key.
+
 ## Firmware structure ##
 
 The firmware should be in .zip file format, prepared using [nRF Util](https://github.com/NordicSemiconductor/pc-nrfutil). 
@@ -37,25 +39,29 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 	          "version": "0.0.1",
 	          "firmwarePath": "/hopper/dfu_application-0.0.1.zip",
 	          "status": "beta",
-	          "priority": "optional"
+	          "priority": "optional",
+                  "key": "testKey1"
 	        },
 	        {
 	          "version": "0.0.2",
 	          "firmwarePath": "/hopper/dfu_application-0.0.2.zip",
 	          "status": "beta",
-	          "priority": "recommended"
+	          "priority": "recommended",
+                  "key": "testKey2"
 	        },
 	        {
 	          "version": "0.0.3",
 	          "firmwarePath": "/hopper/dfu_application-0.0.3.zip",
 	          "status": "beta",
-	          "priority": "optional"
+	          "priority": "optional",
+                  "key": "testKey1"
 	        },
 	        {
 	          "version": "0.0.4",
 	          "firmwarePath": "/hopper/dfu_application-0.0.4.zip",
 	          "status": "production",
-	          "priority": "critical"
+	          "priority": "critical",
+                  "key": "testKey2"
 	        }
 	    ],
 	    "controllerFirmwares": [
@@ -63,7 +69,8 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 	          "version": "0.0.1",
 	          "firmwarePath": "/controller/dfu_application-0.0.1.zip",
 	          "status": "production",
-	          "priority": "critical"
+	          "priority": "critical",
+                  "key": "testKey1"
 	        }
 	    ]
 	}
@@ -74,13 +81,14 @@ The firmware should be in .zip file format, prepared using [nRF Util](https://gi
 The typical flow to introduce a new firmware is as follows:
 
 1. Update this repository with the firmware zip file & json file.
-Ensure the json file includes the firmware with `"status": "beta"` and `"priority": "optional"`
+Ensure the json file includes the firmware with `"status": "beta"` and `"priority": "optional"`  and the corresponding key.
 
        {
            "version": "7.8.9",
            "firmwarePath": "/hopper/dfu_application-7.8.9.zip",
            "status": "beta",
-           "priority": "optional"
+           "priority": "optional",
+           "key": "testKey1"
        }
 
 2. Commit the changes to the repository.
@@ -93,7 +101,8 @@ Firmware updates will need to be through the 'update firmware' screens.
            "version": "7.8.9",
            "firmwarePath": "/hopper/dfu_application-7.8.9.zip",
            "status": "production",
-           "priority": "recommended"
+           "priority": "recommended",
+           "key": "testKey1"
        }
 
 4. Commit the changes to the repository.
