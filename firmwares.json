@@ -39,7 +39,7 @@
       "version": "1.0.14",
       "firmwarePath": "/hopper/dfu_application-1.0.14.zip",
       "status": "production",
-      "priority": "recommended",
+      "priority": "optional",
       "key": "key1"
     },
     {
@@ -53,7 +53,7 @@
       "version": "1.0.26",
       "firmwarePath": "/hopper/dfu_application-1.0.26.zip",
       "status": "production",
-      "priority": "optional",
+      "priority": "recommended",
       "key": "key1"
     }
 
