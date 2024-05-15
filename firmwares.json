@@ -59,5 +59,12 @@
 
   ],
   "controllerFirmwares": [
+    {
+      "version": "1.0.17",
+      "firmwarePath": "/controller/dfu_application-controller-1.0.17.zip",
+      "status": "beta",
+      "priority": "optional",
+      "key": "controllerKey1"
+    }
   ]
 }
