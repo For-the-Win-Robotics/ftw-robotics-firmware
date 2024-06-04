@@ -65,6 +65,20 @@
       "status": "beta",
       "priority": "optional",
       "key": "controllerKey1"
+    },
+    {
+      "version": "1.0.20",
+      "firmwarePath": "/controller/dfu_application-controller-1.0.20.zip",
+      "status": "beta",
+      "priority": "optional",
+      "key": "controllerKey1"
+    },
+    {
+      "version": "1.0.21",
+      "firmwarePath": "/controller/dfu_application-controller-1.0.21.zip",
+      "status": "beta",
+      "priority": "optional",
+      "key": "controllerKey1"
     }
   ]
 }
