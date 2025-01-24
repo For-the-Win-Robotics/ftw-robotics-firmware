@@ -1,65 +1,9 @@
 {
   "hopperFirmwares": [
     {
-      "version": "0.0.4",
-      "firmwarePath": "/hopper/dfu_application-0.0.4.zip",
-      "status": "production",
-      "priority": "critical",
-      "key": "key1"
-    },
-	{
-      "version": "0.0.7",
-      "firmwarePath": "/hopper/dfu_application-0.0.7.zip",
-      "status": "beta",
-      "priority": "optional",
-      "key": "key1"
-    },
-	{
-      "version": "0.0.8",
-      "firmwarePath": "/hopper/dfu_application-0.0.8.zip",
-      "status": "beta",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
-      "version": "1.0.12",
-      "firmwarePath": "/hopper/dfu_application-1.0.12.zip",
-      "status": "beta",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
-      "version": "1.0.13",
-      "firmwarePath": "/hopper/dfu_application-1.0.13.zip",
-      "status": "beta",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
-      "version": "1.0.14",
-      "firmwarePath": "/hopper/dfu_application-1.0.14.zip",
-      "status": "production",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
-      "version": "1.0.16",
-      "firmwarePath": "/hopper/dfu_application-1.0.16.zip",
-      "status": "production",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
-      "version": "1.0.26",
-      "firmwarePath": "/hopper/dfu_application-1.0.26.zip",
-      "status": "production",
-      "priority": "optional",
-      "key": "key1"
-    },
-    {
       "version": "1.0.30",
       "firmwarePath": "/hopper/dfu_application-1.0.30.zip",
-      "status": "production",
+      "status": "beta",
       "priority": "optional",
       "key": "key1"
     },
