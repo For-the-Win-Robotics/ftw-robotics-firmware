@@ -81,7 +81,7 @@
       "version": "1.0.36",
       "firmwarePath": "/hopper/dfu_application-1.0.36.zip",
       "status": "production",
-      "priority": "recommended",
+      "priority": "critical",
       "key": "key1"
     }
 
