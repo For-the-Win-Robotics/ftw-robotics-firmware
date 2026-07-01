@@ -27,8 +27,14 @@
       "status": "production",
       "priority": "critical",
       "key": "key1"
+    },
+    {
+      "version": "2.0.1",
+      "firmwarePath": "/hopper/dfu_application-2.0.1.zip",
+      "status": "beta",
+      "priority": "optional",
+      "key": "key1"
     }
-
   ],
   "controllerFirmwares": [
     {
